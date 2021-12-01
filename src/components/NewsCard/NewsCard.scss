@@ -2,7 +2,15 @@
 
 .card-item {
     background: $secondary-color;
-    cursor: ponter;
+    cursor: pointer;
+    width: 600px;
+    height: 550px;
+    margin: 20px 40px;
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
 }
 
 .card-top {
@@ -13,11 +21,36 @@
     }
 }
 
+
 .card-info {
     color: $font-primary;
+    width: 100%;
     h4 {
         font-size: 22px;
         font-weight: 400;
+        margin-top: 10px;
         margin-bottom: 10px;
+        text-align: center;
+    }
+    p {
+        font-style: italic;
+        text-align: center;
+        margin: 20px 0px;
+    }
+    h5 {
+        text-align: right;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 616px) {
+    .card-item {
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .card-item h4{
+        font-size: 15px;
     }
 }

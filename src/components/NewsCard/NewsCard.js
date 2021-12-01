@@ -13,9 +13,7 @@ const NewsCard = (props) => {
                     <div className="card-info">
                         <h4>{data.title}</h4>
                         <p>{data.description}</p>
-                        <h5>{data.source.id}</h5>
-                        <h5>{data.source.name}</h5>
-                        <h5>{data.publishedAt}</h5>
+                        <h5>{data.source.id} {data.source.name} {data.publishedAt}</h5>
                     </div>
                 </div>
             </div>
